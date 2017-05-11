@@ -1,0 +1,85 @@
+%!TEX program = xelatex 
+% Scott's letterhead template. Requires that Miami logo and signature file be
+% installed within the LaTeX directory structure. The "letter" class is used
+% because it allows for spacing between paragraphs, but properly line breaks at
+% the end of paragraphs (the articles class tends to avoid full lines at the
+% ends of paragraphs, for some reason).
+
+\documentclass[$size$]{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\renewcommand\thesection{}
+\renewcommand\thesubsection{}
+\usepackage{fixltx2e}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+
+% Adds microtypography features: character protrusion, for XeTeX.
+\usepackage{microtype}
+
+% New lines between paragraphs
+\usepackage[parfill]{parskip}
+
+% Allows links.
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[xetex, bookmarks, colorlinks, breaklinks]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=NavyBlue, linkcolor=NavyBlue}
+
+\urlstyle{rm}
+
+\frenchspacing{}        % Remove extra spaces after periods.
+\pagestyle{empty}       % Remove page numbers.
+
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}  % Sets quotation marks.
+\setromanfont{Linux Libertine O}
+\setsansfont[BoldFont={DejaVu Sans Bold}]{DejaVu Sans}
+\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+
+% From default template
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\newcommand\shyp{\-}
+
+\newcommand{\header}[0]{
+	$if(hdr.include)$
+		\input{$hdr.file$}
+	$endif$
+    }
+
+$if(draft)$
+\usepackage{draftwatermark}
+\SetWatermarkLightness{0.9}
+$endif$
+
+\begin{document}
+
+\header
+
+$body$
+
+$if(sig.include)$
+    \begin{minipage}[t]{6.5in}
+    Sincerely,\\
+    $if(sig.sign)$
+        \vspace{-0.2in}\includegraphics{/home/gjc216/.pandoc/images/sig}
+    $else$
+        \\
+    $endif$
+    \\
+    Gavin Cooper\\
+    $sig.post$
+    \end{minipage}
+$endif$
+
+$if(cc)$
+    cc: $for(cc)$$cc$$sep$, $endfor$
+$endif$
+
+$if(ps)$
+    $ps$
+$endif$
+
+\end{document}
