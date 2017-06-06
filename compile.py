@@ -38,13 +38,8 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
 
     for _ in range(attempts):
         print('Attempt number {}'.format(_))
-        print(['xelatex', '{}.tex'.format(base)])
         proc = subprocess.Popen(['xelatex', '{}.tex'.format(base)], stdout=subprocess.PIPE,
-#            result = subprocess.check_output(['xelatex', '{}.tex'.format(base)],
-                                         universal_newlines=True, env=my_env,
-#                                             timeout=5)
-)
-        print(my_env['TEXINPUTS'])
+                                universal_newlines=True, env=my_env)
         outs = ''
         try:
             outs, errs = proc.communicate(timeout=5)
@@ -54,8 +49,7 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
             proc.kill()
             print('\n{}\n{}'.format('='*40, 'Was waiting for input, fix and retry'))
             break
-        if 'table widths changed' not in outs:
-            print('{}.pdf'.format(base), currwd, os.getcwd())
+        if 'Table widths have changed' not in outs:
             shutil.copy('{}.pdf'.format(base), currwd)
             os.chdir(currwd)
             break
@@ -67,17 +61,14 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
 def compile(template=None, document=None, **kwargs):
     '''Compile a document using the template'''
     with tempfile.TemporaryDirectory() as temp_dir:
-        print(template, document)
         template_dir = os.path.dirname(template)
         doc_dir = os.path.dirname(document)
         template = shutil.copy(template, temp_dir)
         document = shutil.copy(document, temp_dir)
-        print(template, document)
         replace(document, kwargs['replace'])
 
         my_env = modenv(['.', template_dir, os.path.join(template_dir, 'personal'),
                          doc_dir, os.path.join(doc_dir, 'personal')])
-        print(my_env['TEXINPUTS'])
         _generate(temp_dir, my_env, template, document)
 
 
