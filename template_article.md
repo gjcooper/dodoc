@@ -7,7 +7,7 @@ sig:
  post: Research Academic
 hdr:
  include: yes (blank for no)
- file: template-hdr
+ file: hdr
 cc:
 ---
 
