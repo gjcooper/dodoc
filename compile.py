@@ -5,6 +5,9 @@ import os
 import tempfile
 import shutil
 import pdb
+import configparser
+import datetime
+import re
 
 
 def validFilePath(possibleFilePath):
@@ -14,8 +17,57 @@ def validFilePath(possibleFilePath):
     raise argparse.ArgumentTypeError(msg)
 
 
+def daymod(date):
+    day = str(date.day)
+    if day.endswith('1'):
+        return day + 'st'
+    if day.endswith('2'):
+        return day + 'nd'
+    if day.endswith('3'):
+        return day + 'rd'
+    return day + 'th'
+
+
+def monthmod(date):
+    return date.strftime('%B')
+
+
+def yearmod(date):
+    return str(date.year)
+
+
+def auto_replacements(autodict):
+    if 'date' in autodict:
+        if autodict['date'] == 'auto':
+            date = datetime.datetime.now()
+            autodict['date'] = date.strftime('%x')
+        else:
+            try:
+                date = datetime.datetime.strptime(autodict['date'], '%x')
+            except ValueError:
+                print('ERROR: Unexpected value for date in config file')
+                raise
+    date_mods = {'day': daymod, 'month': monthmod, 'year': yearmod}
+    for date_element, mod in date_mods.items():
+        if autodict[date_element] == 'from_date':
+            autodict[date_element] = mod(date)
+
+
 def replace(document, patternfile):
-    pass
+    '''This modifies the document in place, make sure you are always working on a copy'''
+    with open(document, 'r') as doc:
+        contents = doc.read()
+    config = configparser.ConfigParser()
+    config.read(patternfile)
+    replacements = config['manual']
+    auto_replacements(config['auto'])
+    replacements.update(config['auto'])
+    # Translate to template key format (re.escaped versions!)
+    replacements = {re.escape('{{{}}}'.format(k)): v for k,v in replacements.items()}
+    pattern = re.compile('|'.join(replacements.keys()))
+    contents = pattern.sub(lambda m: replacements[re.escape(m.group(0))], contents)
+    with open(document, 'w') as doc:
+        doc.write(contents)
 
 
 def modenv(folderlist):
@@ -65,7 +117,8 @@ def compile(template=None, document=None, **kwargs):
         doc_dir = os.path.dirname(document)
         template = shutil.copy(template, temp_dir)
         document = shutil.copy(document, temp_dir)
-        replace(document, kwargs['replace'])
+        if kwargs['replace']:
+            replace(document, kwargs['replace'])
 
         my_env = modenv(['.', template_dir, os.path.join(template_dir, 'personal'),
                          doc_dir, os.path.join(doc_dir, 'personal')])
