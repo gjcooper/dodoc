@@ -1,22 +1,36 @@
-## For educational purposes only! Not a substitute for individualized advice from a qualified legal practitioner. ##
+---
+size: 11pt
+draft: 
+sig:
+ include: yes (blank for no)
+ sign:
+ post: Data Analyst
+hdr:
+ include: yes (blank for no)
+ file: consult-hdr
+cc:
+---
 
 SOFTWARE CONSULTING AGREEMENT
+=============================
 
-THIS AGREEMENT is entered into on <contract date> by and between Avie, LLC, (hereinafter "Developer") and <client company>, (hereinafter "Company"). 
+THIS AGREEMENT is entered into on {date} by and between {developer}, (hereinafter "Developer") and {company}, (hereinafter "Company"). 
 
 RECITALS 
+--------
 
-WHEREAS, Company wishes to retain Developer to develop certain <software type> software (hereinafter defined and referred to as “Software”); and
+WHEREAS, Company wishes to retain Developer to develop certain {software type} software (hereinafter defined and referred to as “Software”); and
 
 WHEREAS, Developer has agreed to develop Software for the Company according to the terms and conditions contained herein.
 
 NOW, THEREFORE, in consideration of the mutual covenants and promises set forth herein, the parties hereby agree as follows: 
 
 AGREEMENT
+---------
 
 1. Duties of Developer. 
 
- a) Developer shall develop the Software and perform other tasks as are set forth in technical specifications for the Software contained in Schedule A. The parties estimate that the development time for the Software will total <estimated hours> hours.
+ a) Developer shall develop the Software and perform other tasks as are set forth in technical specifications for the Software contained in Schedule A. The parties estimate that the development time for the Software will total {estimated hours} hours.
 
  b) Developer will produce and provide to Company appropriate technical and training documentation for the Software.
 
@@ -52,7 +66,7 @@ AGREEMENT
 
 6. Compensation. 
 
- a) As compensation for development of the Software, Company shall pay Developer <your rate> per hour of actual, demonstrated work by Developer. Developer shall, on a weekly basis, submit to Company an invoice itemizing in reasonable detail the dates on which services were performed, the number of hours spent on such dates and a brief description of the services rendered.
+ a) As compensation for development of the Software, Company shall pay Developer {hourly rate} per hour of actual, demonstrated work by Developer. Developer shall, on a weekly basis, submit to Company an invoice itemizing in reasonable detail the dates on which services were performed, the number of hours spent on such dates and a brief description of the services rendered.
 
  b) The Company shall pay Developer the amounts due pursuant to submitted invoices within 15 days after such invoices are received by the Company.
 
@@ -91,14 +105,14 @@ b) Software and all information and documentation relating thereto shall be held
 15. Notice. Any notice or communication permitted or required by this Agreement shall be deemed effective when personally delivered or deposited, postage prepaid, in the first class mail of the United States properly addressed to the appropriate party at the address set forth below:
 
  a) Notices as to Developer:
-    Avie, LLC
-    <street address>
-    <city/state/zip>
+    {contractor}
+    {street address}
+    {city state postcode}
 
  b) Notices as to Company:
-    <client company>
-    <client company street address>
-    <client company city/state/zip>
+    {company}
+    {company street address}
+    {company city state postcode}
 
 16. Enforceability. If any provision of this Agreement is held by a court of competent jurisdiction to be unenforceable, the reminder of the Agreement shall remain in full force and effect and shall in no way be impaired. 
 
@@ -108,11 +122,11 @@ b) Software and all information and documentation relating thereto shall be held
 
  b) Binding Effect. This Agreement shall be binding upon the parties hereto, their successors, trustees, and assigns.
 
- c) Governing Law, Severability. This Agreement shall be governed by the laws of the State of Colorado. The invalidity or unenforceability of any provision of this Agreement or any Exhibit or Schedule shall not affect the validity or enforceability of any other term or provision of this Agreement or any such Exhibit or Schedule. 
+ c) Governing Law, Severability. This Agreement shall be governed by the laws of {jurisdiction}. The invalidity or unenforceability of any provision of this Agreement or any Exhibit or Schedule shall not affect the validity or enforceability of any other term or provision of this Agreement or any such Exhibit or Schedule. 
 
 WHEREFORE, the parties hereto have executed this Agreement by their duly authorized representatives and have caused this Agreement to become effective as of the date first above written. 
 
-COMPANY:    <client company>
+COMPANY:    {company}
 
 By:____________________________________
 
@@ -120,7 +134,7 @@ Title:___________________________________
 
 Date:___________________________________
 
-DEVELOPER:    Avie, LLC
+DEVELOPER:    {developer}
 
 By:____________________________________
 
@@ -131,9 +145,9 @@ Date:___________________________________
 
 
 Schedule A – Technical Specifications
-<software name> System Requirements for <client company>
-Version 1.0, dated <specification last updated date>
+{software name} System Requirements for {company}
+Version 1.0, dated {specification last updated date}
 
-<add technical specifications for the software here>
+{technical specification}
 
 

@@ -4,7 +4,6 @@ import subprocess
 import os
 import tempfile
 import shutil
-import pdb
 import configparser
 import datetime
 import re
@@ -63,9 +62,14 @@ def replace(document, patternfile):
     auto_replacements(config['auto'])
     replacements.update(config['auto'])
     # Translate to template key format (re.escaped versions!)
-    replacements = {re.escape('{{{}}}'.format(k)): v for k,v in replacements.items()}
+    replacements = {re.escape('{{{}}}'.format(k)): v for k, v in replacements.items()}
     pattern = re.compile('|'.join(replacements.keys()))
     contents = pattern.sub(lambda m: replacements[re.escape(m.group(0))], contents)
+    matches = re.compile(r'{(.*?)}')
+    unmatched = matches.findall(contents)
+    if len(unmatched) > 0:
+        msgs = '\n'.join('\tUnmatched replacement - ' + str(m) for m in unmatched)
+        print('WARNING: Unmatched replacement found in document: \n{}'.format(msgs))
     with open(document, 'w') as doc:
         doc.write(contents)
 
@@ -99,11 +103,12 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
                 continue
         except subprocess.TimeoutExpired:
             proc.kill()
-            print('\n{}\n{}'.format('='*40, 'Was waiting for input, fix and retry'))
+            print('\n{}\n{}'.format('=' * 40, 'Was waiting for input, fix and retry'))
             break
         if 'Table widths have changed' not in outs:
             shutil.copy('{}.pdf'.format(base), currwd)
             os.chdir(currwd)
+            print('Successfully processed')
             break
     else:
         os.chdir(currwd)
