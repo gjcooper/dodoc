@@ -77,7 +77,7 @@ def replace(document, patternfile):
 def modenv(folderlist):
     env = os.environ.copy()
 
-    prevTEX = env['TEXINPUTS'] if 'TEXINPUTS' in env else [':']
+    prevTEX = env['TEXINPUTS'].split(os.pathsep) if 'TEXINPUTS' in env else []
     newTEX = os.pathsep.join(folderlist + prevTEX)
     env['TEXINPUTS'] = newTEX
     return env
