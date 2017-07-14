@@ -92,8 +92,8 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
                            '{}'.format(document), '-o' '{}.tex'.format(base)],
                           env=my_env)
 
-    for _ in range(attempts):
-        print('Attempt number {}'.format(_))
+    for attempt in range(1, attempts+1):
+        print('Attempt number {}'.format(attempt))
         proc = subprocess.Popen(['xelatex', '{}.tex'.format(base)], stdout=subprocess.PIPE,
                                 universal_newlines=True, env=my_env)
         outs = ''
