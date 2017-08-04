@@ -104,6 +104,7 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
         except subprocess.TimeoutExpired:
             proc.kill()
             print('\n{}\n{}'.format('=' * 40, 'Was waiting for input, fix and retry'))
+            print('Likely to be waiting for a filename, check your templates, and if necessary link to a source directory with -d')
             break
         if 'Table widths have changed' not in outs:
             shutil.copy('{}.pdf'.format(base), currwd)
@@ -115,7 +116,7 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
         raise RuntimeError('Tried {} times - table problems'.format(attempts))
 
 
-def compile(template=None, document=None, **kwargs):
+def compile(template=None, document=None, directory=[], **kwargs):
     '''Compile a document using the template'''
     with tempfile.TemporaryDirectory() as temp_dir:
         template_dir = os.path.dirname(template)
@@ -125,8 +126,7 @@ def compile(template=None, document=None, **kwargs):
         if kwargs['replace']:
             replace(document, kwargs['replace'])
 
-        my_env = modenv(['.', template_dir, os.path.join(template_dir, 'personal'),
-                         doc_dir, os.path.join(doc_dir, 'personal')])
+        my_env = modenv(['.', template_dir, doc_dir] + directory)
         _generate(temp_dir, my_env, template, document)
 
 
@@ -135,5 +135,6 @@ if __name__ == '__main__':
     parser.add_argument('template', type=validFilePath, help='A latex template to apply')
     parser.add_argument('document', type=validFilePath, help='The document to apply the template to')
     parser.add_argument('-r', '--replace', type=validFilePath, help='A set of replacement patterns to apply to the document')
+    parser.add_argument('-d', '--directory', help='A directory containing required files', action='append', default=[])
     args = parser.parse_args()
     compile(**vars(args))
