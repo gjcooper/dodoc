@@ -79,7 +79,7 @@ def modenv(folderlist):
 
     prevTEX = env['TEXINPUTS'].split(os.pathsep) if 'TEXINPUTS' in env else []
     newTEX = os.pathsep.join(folderlist + prevTEX)
-    env['TEXINPUTS'] = newTEX
+    env['TEXINPUTS'] = newTEX + ':'
     return env
 
 
