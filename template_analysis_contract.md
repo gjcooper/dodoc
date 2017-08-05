@@ -30,15 +30,15 @@ AGREEMENT
 
 1. Duties of Consultant. 
 
- a) Consultant shall perform the Data Analysis and perform other tasks as are set forth in requirements specifications for the Data Analysis contained in Schedule A. The parties estimate that the required time for the Data Analysis will total {estimated hours} hours.
+ a) Consultant shall perform the Data Analysis and perform other tasks as are set forth in the Statement of Work for the Data Analysis contained in Schedule A. The parties estimate that the required time for the Data Analysis will total {estimated hours} hours.
 
  b) Consultant will produce and provide to Owner appropriate detailed documentation for the procedures used in the Data Analysis.
 
 2. Warranties and Representations. Consultant warrants and represents that:
 
- a) The Data Analysis will meet the requirements specifications of Schedule A hereto, and there will be no known errors, malfunctions or defects in the Data Analysis or any portion thereof at the time of delivery.
+ a) The Data Analysis will meet the Statement of Work of Schedule A hereto, and there will be no known errors, malfunctions or defects in the Data Analysis or any portion thereof at the time of delivery.
 
- b) Consultant owns or shall own the entire right, title and interest in and to the Data Analysis and all proprietary rights therein, or Consultant has or will have sufficient rights in and to the Data Analysis and all proprietary rights therein to fulfill its obligations under this Agreement.
+ b) Consultant owns or shall own the entire right, title and interest in and to the Data Analysis scripts and all proprietary rights therein, or Consultant has or will have sufficient rights in and to the Data Analysis scripts and all proprietary rights therein to fulfill its obligations under this Agreement.
 
  c) Consultant has the right to enter into this Agreement, to grant to the Owner the rights and licenses set forth herein, and to perform all other obligations of this Agreement.
 
@@ -46,17 +46,17 @@ AGREEMENT
 
 3. Duties of Owner. 
 
- a) Upon delivery of the Data Analysis by Consultant, Owner will promptly review the Data Analysis for compliance with the requirements specifications.
+ a) Upon delivery of the Data Analysis by Consultant, Owner will promptly review the Data Analysis for compliance with the Statement of Work.
 
  b) Owner will notify Consultant within 14 days following delivery that Owner either accepts or rejects the Data Analysis and all deliverables and tasks, but all of the foregoing shall be deemed accepted, if not rejected in writing by Owner within 21 days after Consultant delivers the Data Analysis.
 
 4. Change Orders.
 
- a) In the event that Owner desires to change the requirements specifications contained in Schedule A, Owner will promptly notify Consultant of such desired changes. Consultant will provide to Owner a revised estimate of the cost to incorporate such changes into the software.
+ a) In the event that Owner desires to change the Statement of Work contained in Schedule A, Owner will promptly notify Consultant of such desired changes. Consultant will provide to Owner a revised estimate of the cost to incorporate such changes into the software.
 
- b) Consultant and Owner will each sign a change order that modifies the requirements specifications contained in Schedule A and sets forth the new requirements specifications prior to Consultant beginning any work on the modified requirements specifications.
+ b) Consultant and Owner will each sign a change order that modifies the Statement of Work contained in Schedule A and sets forth the new Statement of Work prior to Consultant beginning any work on the modified Statement of Work.
 
- c) In the event that the new requirements specifications modify work already performed by Consultant then Consultant will be entitled to payment for work already performed and completed.
+ c) In the event that the new Statement of Work modify work already performed by Consultant then Consultant will be entitled to payment for work already performed and completed.
 
 5. Grant of License. 
 
@@ -144,7 +144,7 @@ Date:___________________________________
 
 
 
-Schedule A – Requirements Specifications
+Schedule A – Statement of Work
 {software name} System Requirements for {company}
 Version 1.0, dated {specification last updated date}
 
