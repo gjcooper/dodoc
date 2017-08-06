@@ -56,7 +56,7 @@ c. Meals, Incidentals, Lodging (Accommodations) & Private Vehicle Usage – Actu
 d. Miscellaneous Expense – Actual and reasonable pre-approved costs that are directly and reasonably required for performance of the Services.
 e. Alcohol and most entertainment costs are NOT allowable expenses, will not be reimbursed by Company, and shall not be included in any manner in any invoice submitted hereunder.
 All invoices shall include a breakout and description of the Services rendered, along with the actual hours and expenses incurred (for T&M type services) and milestone descriptions (for FFP type services), receipts (if required), and shall be submitted in a format prescribed by the Company indicating the applicable purchase order number issued by the Company or Statement of Work for which the invoice relates.
-Company shall make payment within forty-five (45) days after receipt of a proper invoice that complies with the requirements of this Agreement.  Company may withhold any amounts in an invoice that are in dispute, are contrary to the requirements of this Section 3, or are not substantiated by proper receipts.
+Company shall make payment within thirty (30) days after receipt of a proper invoice that complies with the requirements of this Agreement.  Company may withhold any amounts in an invoice that are in dispute, are contrary to the requirements of this Section 3, or are not substantiated by proper receipts.
 Payments made to Consultant shall not constitute or be construed as acceptance of any of the Services performed by Consultant under this Agreement.
 
 INDEPENDENT CONTRACTOR
@@ -84,25 +84,25 @@ Proprietary Information shall remain the property of the disclosing party and sh
 INTELLECTUAL PROPERTY RIGHTS
 ----------------------------
 
-1. Inventions
+### Inventions
 
-	1. Consultant shall promptly disclose to Company all inventions, software, development, improvements, and contrivances (hereinafter “Inventions”) in Consultant’s field of endeavor in the line of Company’ present or future business which are made or conceived or actually or constructively reduced to practice by Consultant or with Consultant’s assistance or under Consultant’s direction in the course of performance during the term and any extension of the term of this Agreement, whether or not patentable and whether made by any of Consultant’s employees solely or jointly with others, which relate to or are suggested by or result from any Services which the Consultant may perform pursuant to this Agreement or from any information obtained by the Consultant in any discussions or meetings with employees of Company.
+1. Consultant shall promptly disclose to Company all inventions, software, development, improvements, and contrivances (hereinafter “Inventions”) in Consultant’s field of endeavor in the line of Company’ present or future business which are made or conceived or actually or constructively reduced to practice by Consultant or with Consultant’s assistance or under Consultant’s direction in the course of performance during the term and any extension of the term of this Agreement, whether or not patentable and whether made by any of Consultant’s employees solely or jointly with others, which relate to or are suggested by or result from any Services which the Consultant may perform pursuant to this Agreement or from any information obtained by the Consultant in any discussions or meetings with employees of Company.
 
-	2. Consultant shall assign and does hereby assign all Consultant’s rights, title and interest in and to said Inventions to Company, and shall assist Company in every way to protect, at Company’ expense, said Inventions, including but not limited to, the signing of patent applications, oaths and assignments in favor of Company relating to the said Inventions, respecting such applications in the United States and in any and all foreign countries and shall assist in any interference proceedings or litigation involving any patents that may be obtained for such Inventions.
+2. Consultant shall assign and does hereby assign all Consultant’s rights, title and interest in and to said Inventions to Company, and shall assist Company in every way to protect, at Company’ expense, said Inventions, including but not limited to, the signing of patent applications, oaths and assignments in favor of Company relating to the said Inventions, respecting such applications in the United States and in any and all foreign countries and shall assist in any interference proceedings or litigation involving any patents that may be obtained for such Inventions.
 
-	3. Consultants shall make no applications for patents on any such Inventions except for Company’ benefit as herein provided.
-
-
+3. Consultants shall make no applications for patents on any such Inventions except for Company’ benefit as herein provided.
 
 
 
-1. Cooperation
 
-	1. “Intellectual Property Rights” shall mean all intellectual and industrial rights, including intellectual and industrial rights to inventions and patents for inventions, including reissues thereof and continuations in part, copyright, designs and industrial designs, trademarks, know-how, trade secrets and confidential information, and other proprietary rights. Consultant hereby undertakes and agrees to cause any individuals contracted by it or employed by it to perform work hereunder to waive all moral rights and droits de suite in and to all intellectual property, including Inventions and copyrightable materials, created by such individuals in their performance of this Agreement and does waive, for itself, any and all moral rights it may have in and to any such intellectual property created in the performance of this Agreement.  Consultant further agrees that, subject to the above paragraphs and all subparagraphs thereunder, during and after the term of this Agreement, Consultant shall execute any documents necessary to vest full title in any such intellectual property in Company, and  will otherwise assist Company in obtaining, either for itself or its assigns, at Company’ expense, all advantages and benefits which may be derived from any such intellectual property, in every proper way during and subsequent to this Agreement, including the securing of all Intellectual Property Rights.
 
-	2. Consultant agrees that, with respect to all copyrightable materials which were not first produced, programmed or designed by Consultant but were incorporated into Services performed and delivered to Company in connection with this Agreement, Consultant shall grant a royalty-free, non-exclusive, and irrevocable license to Company to use, reproduce, dispose of, translate, publish and to authorize others of Company’ choosing to do the same with respect to any and all said materials, provided this license shall be only to the extent the Consultant has the right or in the future acquires the right to grant such licenses without becoming liable for any compensation to others solely because of such grant. In this regard, Consultant further agrees to promptly notify Company of any such limitation of which Consultant is aware concerning said materials.
+### Cooperation
 
-	3. Data — All notes, drawings, designs and technical data developed in connection with or pursuant to the terms of this Agreement shall become and/or remain the exclusive property of Company, and Company shall have the exclusive right to use and disclose them for any purpose.  Upon completion of the Services or earlier termination of this Agreement, Consultant agrees to promptly deliver to Company all materials, including all copies thereof, that are in Consultant’s possession or under his/her control that were developed in connection with this Agreement.
+1. “Intellectual Property Rights” shall mean all intellectual and industrial rights, including intellectual and industrial rights to inventions and patents for inventions, including reissues thereof and continuations in part, copyright, designs and industrial designs, trademarks, know-how, trade secrets and confidential information, and other proprietary rights. Consultant hereby undertakes and agrees to cause any individuals contracted by it or employed by it to perform work hereunder to waive all moral rights and droits de suite in and to all intellectual property, including Inventions and copyrightable materials, created by such individuals in their performance of this Agreement and does waive, for itself, any and all moral rights it may have in and to any such intellectual property created in the performance of this Agreement.  Consultant further agrees that, subject to the above paragraphs and all subparagraphs thereunder, during and after the term of this Agreement, Consultant shall execute any documents necessary to vest full title in any such intellectual property in Company, and  will otherwise assist Company in obtaining, either for itself or its assigns, at Company’ expense, all advantages and benefits which may be derived from any such intellectual property, in every proper way during and subsequent to this Agreement, including the securing of all Intellectual Property Rights.
+
+2. Consultant agrees that, with respect to all copyrightable materials which were not first produced, programmed or designed by Consultant but were incorporated into Services performed and delivered to Company in connection with this Agreement, Consultant shall grant a royalty-free, non-exclusive, and irrevocable license to Company to use, reproduce, dispose of, translate, publish and to authorize others of Company’ choosing to do the same with respect to any and all said materials, provided this license shall be only to the extent the Consultant has the right or in the future acquires the right to grant such licenses without becoming liable for any compensation to others solely because of such grant. In this regard, Consultant further agrees to promptly notify Company of any such limitation of which Consultant is aware concerning said materials.
+
+3. Data — All notes, drawings, designs and technical data developed in connection with or pursuant to the terms of this Agreement shall become and/or remain the exclusive property of Company, and Company shall have the exclusive right to use and disclose them for any purpose.  Upon completion of the Services or earlier termination of this Agreement, Consultant agrees to promptly deliver to Company all materials, including all copies thereof, that are in Consultant’s possession or under his/her control that were developed in connection with this Agreement.
 
 
 
@@ -114,18 +114,15 @@ REPRESENTATIONS & WARRANTIES
 
 Consultant represents and warrants that Consultant and each officer or employee thereof who renders Services hereunder:
 
-1. 
 1. shall perform the Services in accordance with the highest standards of professional skill and that for a period of six (6) months from the completion date of the Services, Consultant shall, at no charge to Company, furnish such materials and services as may be necessary to correct any defects in the materials or deliverables developed under the applicable Statement of Work;
 
 2. shall comply with all applicable federal and other jurisdictional laws, including local laws, in performing the Services;
 
-3. has a legal right to remain and work in Canada and, if any of the Services are performed in the United States or on behalf of the United States Government, the United States, and that Consultant shall indemnify, defend and hold Company harmless against any claims, penalties, fees or charges of any kind whatsoever arising out of or as a result of Consultant’s failure to comply with applicable immigration laws;
+3. it has the authority and capacity to enter into this Agreement and it is not subject to any restrictive covenant or other legal obligation which prohibits the Consultant from performing the Services;
 
-4. it has the authority and capacity to enter into this Agreement and it is not subject to any restrictive covenant or other legal obligation which prohibits the Consultant from performing the Services;
+4. hasn’t any relationship with any third party with whom Company has contracted which would cause such person to have a conflict of interest in relation to this Agreement or in respect of the Services. Should any such conflict of interest arise during the term of this Agreement, the Consultant covenants and agrees to immediately notify Company; and
 
-5. hasn’t any relationship with any third party with whom Company has contracted which would cause such person to have a conflict of interest in relation to this Agreement or in respect of the Services. Should any such conflict of interest arise during the term of this Agreement, the Consultant covenants and agrees to immediately notify Company; and
-
-6. is and will continue to be, where applicable, a GST / HST registrant in accordance with the Excise Tax Act (Canada) for the term of this Agreement.
+5. is and will continue to be, where applicable, a GST registrant in accordance with the A New Tax System (Goods and Services Tax) Act 1999 (Australia).
 
 
 
@@ -134,16 +131,11 @@ INSURANCE
 ---------
 
 
-Consultant agrees to procure and maintain during the term of this Agreement, at Consultant’s own cost and expense, liability and property damage insurance, including automobile and contractual liability, with the following minimum liability limits:
+Consultant agrees to procure and maintain during the term of this Agreement, at Consultant’s own cost and expense, professional indemnity and public liability insurance, with the following minimum liability limits:
 
-1. 
-1. $1,000,000 for injuries or death to any one person;
+1. $1,000,000 for professional liability;
 
-2. $1,000,000 for injuries or death(s) from any one accident; and
-
-3. $1,000,000 for damage to property.
-
-
+2. $5,000,000 for public liability.
 
 Consultant agrees to provide appropriate certificates or other evidence of such insurance coverage as may be requested by Company.  Consultant agrees that the procurement and maintenance of the above insurance coverage shall not limit or affect any liability that Consultant may incur under this Agreement or otherwise.
 
@@ -165,18 +157,17 @@ ACCEPTANCE
 ----------
 
 
-If Company is not reasonably satisfied with any Service, it will so notify Consultant with an explanation of the deficiency.  Consultant will, at its own expense, re-perform the Service within fifteen (15) days after receipt of Company’s notice of deficiency.  The foregoing procedure will be repeated until Company accepts or finally rejects the Service in its reasonable discretion.
+If Company is not reasonably satisfied with any Service, it will so notify Consultant with an explanation of the deficiency.  Consultant will, at its own expense, re-perform the Service within twenty-one (21) days after receipt of Company’s notice of deficiency.  The foregoing procedure will be repeated until Company accepts or finally rejects the Service in its reasonable discretion.
 
 TERMINATION
 -----------
 
 
-This Agreement may be terminated by either party in the event the other party fails to perform its obligations hereunder on time, fails to assure timely performance, or otherwise fails to perform its material obligations; provided, however, that prior to such termination the terminating party notifies the defaulting party in writing at least ten (10) days in advance, states the reasons why the Agreement should be terminated and affords the defaulting party an opportunity to cure any alleged default during such ten (10) day notice period.
+This Agreement may be terminated by either party in the event the other party fails to perform its obligations hereunder on time, fails to assure timely performance, or otherwise fails to perform its material obligations; provided, however, that prior to such termination the terminating party notifies the defaulting party in writing at least fifteen (15) days in advance, states the reasons why the Agreement should be terminated and affords the defaulting party an opportunity to cure any alleged default during such fifteen (15) day notice period.
 Either party may terminate this Agreement, upon notice and without liability, in the event the other party: (a) files a petition in bankruptcy; (b) has filed against it an involuntary petition in bankruptcy not dismissed within sixty (60) days; (c) consents to the appointment of a receiver, custodian, trustee or liquidator; or (d) dissolves, liquidates or makes a general assignment for the benefit of creditors.
-Company may terminate this Agreement, or any Services to be performed hereunder, in whole or in part, without cause and for its own convenience, by providing Consultant written notice of termination at least seven (7) days in advance, specifying the extent to which the Agreement is so terminated and the date upon which such termination becomes effective.  Company shall have no liability for such termination except for liability for Services rendered or expenses incurred by Consultant in accordance with this Agreement prior to the effective date of such termination and for which payment has not been made.
+Company may terminate this Agreement, or any Services to be performed hereunder, in whole or in part, without cause and for its own convenience, by providing Consultant written notice of termination at least fifteen (15) days in advance, specifying the extent to which the Agreement is so terminated and the date upon which such termination becomes effective.  Company shall have no liability for such termination except for liability for Services rendered or expenses incurred by Consultant in accordance with this Agreement prior to the effective date of such termination and for which payment has not been made.
 Upon termination of this Agreement, Consultant shall return to Company all copies of any Company data, records, or materials, of whatever nature and regardless of media.  Consultant shall also furnish Company with all work in progress or portions thereof.  Within thirty (30) days following termination or expiration of this Agreement, Consultant shall submit to Company a termination proposal detailing the work completed and accepted by Company and the proposed value of such completed and accepted work.  The amount due Consultant as a result of any termination hereunder will be as follows:
 
-1. 
 1. For Services performed on a firm-fixed-price (FFP) basis:
 
 	1. The lesser of 1) a prorated portion of the overall Statement of Work price based on the percent of the work completed and accepted up to the date of termination or 2) actual hours expended under the Statement of Work at the Consultant’s most favored rate for such consulting services, such hours to be supported with suitable records.
@@ -185,8 +176,6 @@ Upon termination of this Agreement, Consultant shall return to Company all copie
 2. For Services performed on a time-and-materials (T&M) basis:
 
 	1. Actual hours expended under the Statement of Work for accepted Services at the hourly rates set forth in the Statement of Work.
-
-
 
 
 Upon payment of the agreed to termination settlement amount, Company shall thereafter have no liability or obligation to Consultant for any further compensation, fees, expenses or other payments related to this Agreement.
@@ -212,7 +201,7 @@ MISCELLANEOUS
 
 1. Severability — If any provision of this Agreement shall be held to be invalid or unenforceable, such provision shall be stricken and the remainder of the Agreement shall remain in full force and effect to accomplish the intent and purpose of the parties.  The parties agree to negotiate the severed provision to bring the same within the applicable legal requirements to the extent possible.
 
-2. Governing Law — The validity, interpretation and/or enforcement of this Agreement shall be governed by the laws of the Province of [PROVINCE], Canada, including its recognition of applicable federal law, but excluding such jurisdiction’s choice of law rules.
+2. Governing Law — The validity, interpretation and/or enforcement of this Agreement shall be governed by the laws of the State of {state}, {jurisdiction}, including its recognition of applicable federal law, but excluding such jurisdiction’s choice of law rules.
 
 3. No Waiver — Any failure or delay by either party to exercise any right, power or privilege hereunder or to insist upon observance or performance by the other party of the provisions of this Agreement shall not operate or be construed as a waiver thereof.  No waiver shall be binding on either party unless it is in writing and signed by an authorized representative of the party to be bound.
 
@@ -224,7 +213,7 @@ MISCELLANEOUS
 
 7. Integration/Modification — This document and any exhibits or attachments hereto embody the entire Agreement of the parties with respect to the subject matter hereof and supersede and cancel all previous negotiations, agreements or commitments by the parties, whether oral or written.  This Agreement may not be released, canceled, abandoned, amended or modified in any manner except by an instrument in writing duly signed by each of the parties hereto.
 
-8. Disputes – The parties agree that prior to bringing any legal action upon any dispute or controversy between the parties arising under or in connection with this Agreement (“Dispute”) they will attempt to settle such matter through good faith negotiations.  Failing such efforts, the parties agree and consent to exclusive venue and jurisdiction in the Provincial and Federal courts of [PROVINCE], Canada, and each party waives any defense of inconvenient forum in connection with such proceedings. The parties acknowledge and agree that the foregoing shall not prevent a party hereto from seeking or obtaining injunctive, preliminary or provisional relief to enforce a party’s rights or to prevent immediate or irreparable harm to a party, including but not limited to the rights set forth in Sections 6 and 7 of this Agreement.
+8. Disputes – The parties agree that prior to bringing any legal action upon any dispute or controversy between the parties arising under or in connection with this Agreement (“Dispute”) they will attempt to settle such matter through good faith negotiations.  Failing such efforts, the parties agree and consent to exclusive venue and jurisdiction in the State and Federal courts of {state}, {jurisdiction}, and each party waives any defense of inconvenient forum in connection with such proceedings. The parties acknowledge and agree that the foregoing shall not prevent a party hereto from seeking or obtaining injunctive, preliminary or provisional relief to enforce a party’s rights or to prevent immediate or irreparable harm to a party, including but not limited to the rights set forth in Sections 6 and 7 of this Agreement.
 
 9. Counterparts – This Agreement may be executed in any number of counterparts, each of which shall be deemed to be an original and all of which taken together shall constitute one agreement. To evidence the fact that it has executed this Agreement, a party may send a copy of its executed counterpart to the other party by electronic transmission and the signature transmitted by such transmission shall be deemed to be that party’s original signature for all purposes.
 
