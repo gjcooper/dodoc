@@ -254,7 +254,7 @@ def list_all():
     templates = searchMatch(searchtype='template')
     doctypes = searchMatch(searchtype='doctype')
     tempout = _list_type('TEMPLATES:\n', templates)
-    docout = _list_type('DOCTYPES:\n', doctypes)
+    docout = _list_type('DOCUMENTS:\n', doctypes)
     print('All accessible templates and doctypes\n{}{}'.format(tempout, docout))
 
 
