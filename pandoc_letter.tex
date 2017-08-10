@@ -34,11 +34,17 @@
 
 \newcommand\shyp{\-}
 
+\newcommand{\coverpage}[0]{
+	$if(cover.include)$
+		\input{$cover.file$}
+	$endif$
+}
+
 \newcommand{\header}[0]{
 	$if(hdr.include)$
 		\input{$hdr.file$}
 	$endif$
-    }
+}
 
 $if(draft)$
 \usepackage{draftwatermark}
@@ -46,6 +52,8 @@ $if(draft)$
 $endif$
 
 \begin{document}
+
+\coverpage
 
 \header
 
