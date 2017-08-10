@@ -22,7 +22,7 @@ Consulting Contract Template
 Prepared for {owner}
 by {consultant}
 
-This Consulting Contract (this “Agreement” or this “Consulting Contract”), effective as of {date}, (“Effective Date”) is made by and between {owner}, with offices located at {Any street address}, {company city state postcode}  (“Company”) and {consultant}, a business with offices located at {street address}, {city state postcode} (“Consultant”).
+This Consulting Contract (this “Agreement” or this “Consulting Contract”), effective as of {date}, (“Effective Date”) is made by and between {owner}, with offices located at {company street address}, {company city state postcode}  (“Company”) and {consultant}, a business with offices located at {street address}, {city state postcode} (“Consultant”).
 
 WHEREAS, Company wishes to retain Consultant to {work description} as more specifically set forth in Attachment 1; and
 
