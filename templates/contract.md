@@ -84,7 +84,8 @@ Proprietary Information shall remain the property of the disclosing party and sh
 INTELLECTUAL PROPERTY RIGHTS
 ============================
 
-### Inventions
+Inventions
+----------
 
 1. Consultant shall promptly disclose to Company all inventions, software, development, improvements, and contrivances (hereinafter “Inventions”) in Consultant’s field of endeavor in the line of Company’ present or future business which are made or conceived or actually or constructively reduced to practice by Consultant or with Consultant’s assistance or under Consultant’s direction in the course of performance during the term and any extension of the term of this Agreement, whether or not patentable and whether made by any of Consultant’s employees solely or jointly with others, which relate to or are suggested by or result from any Services which the Consultant may perform pursuant to this Agreement or from any information obtained by the Consultant in any discussions or meetings with employees of Company.
 
@@ -96,7 +97,8 @@ INTELLECTUAL PROPERTY RIGHTS
 
 
 
-### Cooperation
+Cooperation
+-----------
 
 1. “Intellectual Property Rights” shall mean all intellectual and industrial rights, including intellectual and industrial rights to inventions and patents for inventions, including reissues thereof and continuations in part, copyright, designs and industrial designs, trademarks, know-how, trade secrets and confidential information, and other proprietary rights. Consultant hereby undertakes and agrees to cause any individuals contracted by it or employed by it to perform work hereunder to waive all moral rights and droits de suite in and to all intellectual property, including Inventions and copyrightable materials, created by such individuals in their performance of this Agreement and does waive, for itself, any and all moral rights it may have in and to any such intellectual property created in the performance of this Agreement.  Consultant further agrees that, subject to the above paragraphs and all subparagraphs thereunder, during and after the term of this Agreement, Consultant shall execute any documents necessary to vest full title in any such intellectual property in Company, and  will otherwise assist Company in obtaining, either for itself or its assigns, at Company’ expense, all advantages and benefits which may be derived from any such intellectual property, in every proper way during and subsequent to this Agreement, including the securing of all Intellectual Property Rights.
 
