@@ -11,7 +11,7 @@ hdr:
 cover:
  include: yes
  company: Test Company
- file: consult-cover
+ file: coverpage
 cc:
 ---
 

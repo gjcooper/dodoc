@@ -118,7 +118,7 @@ def auto_replacements(autodict):
             try:
                 date = datetime.datetime.strptime(autodict['date'], '%x')
             except ValueError:
-                print('ERROR: Unexpected value for date in config file')
+                logger.critical('Unexpected value for date in config file')
                 raise
     date_mods = {'day': daymod, 'month': monthmod, 'year': yearmod}
     for date_element, mod in date_mods.items():
@@ -159,7 +159,7 @@ def replace(document, patternfile, generate=False):
     unmatched = matches.findall(contents)
     if len(unmatched) > 0:
         if generate:
-            print('Generating new values for configuration:')
+            logger.info('Generating new values for configuration:')
             for m in unmatched:
                 print('What value should be used for ' + str(m))
                 value = input('\t- ')
@@ -198,6 +198,7 @@ def mod_file(sourcefile, ext, unique=True, generate_non_unique=True, cntr=1):
 
 def _generate(temp_dir, my_env, template, document, attempts=5):
     dest_file = mod_file(document, '.tex')
+    output_file = mod_file(dest_file, '.pdf')
     final_file = mod_file(document, '.pdf')
     currwd = os.getcwd()
     os.chdir(temp_dir)
@@ -206,7 +207,7 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
                            '{}'.format(document), '-o', '{}'.format(dest_file)])
 
     for attempt in range(1, attempts + 1):
-        print('Attempt number {}'.format(attempt))
+        logger.info('Attempt number {}'.format(attempt))
         proc = subprocess.Popen(['xelatex', '{}'.format(dest_file)], stdout=subprocess.PIPE,
                                 universal_newlines=True, env=my_env)
         outs = ''
@@ -216,11 +217,11 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
                 continue
         except subprocess.TimeoutExpired:
             proc.kill()
-            print('\n{}\n{}'.format('=' * 40, 'Was waiting for input, fix and retry'))
-            print('Likely to be waiting for a filename, check your templates, and if necessary link to a source directory with -d')
+            logger.error('\n{}\n{}'.format('=' * 40, 'Was waiting for input, fix and retry'))
+            logger.error('Likely to be waiting for a filename, check your templates, and if necessary link to a source directory with -d')
             break
         if 'Table widths have changed' not in outs:
-            shutil.copy('{}'.format(final_file), currwd)
+            shutil.copy('{}'.format(output_file), str(Path(currwd).joinpath(final_file.name)))
             os.chdir(currwd)
             print('Successfully processed')
             break
@@ -232,6 +233,7 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
 def compile(template=None, document=None, folders=[], **kwargs):
     '''Compile a document using the template'''
     with tempfile.TemporaryDirectory() as temp_dir:
+        folders = [str(Path(f).resolve()) for f in folders]
         my_env = modenv(['.', str(template.parent), str(document.parent)] + folders)
         template = Path(shutil.copy(str(template), temp_dir))
         document = Path(shutil.copy(str(document), temp_dir))
