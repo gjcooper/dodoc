@@ -6,8 +6,8 @@ sig:
  sign:
  post: Data Analyst
 hdr:
- include: 
- file: consult-hdr
+ include: yes
+ file: hdr
 cover:
  include: yes
  company: Test Company
@@ -31,20 +31,20 @@ WHEREAS, Consultant agrees to perform the services set forth in this Agreement a
 NOW, THEREFORE, in consideration of the foregoing recitals and the terms, conditions and covenants contained herein, it is hereby agreed as follows:
 
 ENGAGEMENT
-----------
+==========
 
 
 Company hereby engages Consultant and Consultant agrees to render at the request of Company, independent consulting services (“Services”) as set forth in the Statement of Work at Attachment 1 and other statements of work which may be added hereto by way of modification to this Agreement (“Statement of Work”), all of which are incorporated herein and form a part hereof.  Services shall be ordered by the Company’s issuance of purchase orders that incorporate this Agreement by reference and / or statements of work that incorporate this Agreement by reference or are otherwise added to this Agreement by way of modification hereto.  Consultant shall provide the Services in a diligent and professional manner and in no event later than any scheduled completion dates set forth in the Statement of Work or the terms of any purchase order.  Time is of the essence for this Agreement and any purchase orders and / or statements of work issued hereunder.
 
 
 TERM
-----
+====
 
 
 The term of this Agreement shall commence on the Effective Date and continue until [DATE], unless otherwise modified by mutual, written agreement of the parties or terminated as set forth herein.
 
 COMPENSATION & PAYMENT
-----------------------
+======================
 
 
 As consideration for the Services, and upon the submission of monthly invoices, within the payment terms stipulated herein, the Company shall pay Consultant at the rates or in accordance with the milestone payment schedule set forth on purchase order(s) issued by Company or in the Statement of Work, for such Services as are actually rendered by Consultant and accepted by the Company.  In no event, however, shall Consultant perform, or receive compensation for: (a) additional services not set forth in the Statement of Work without a formal, bilateral modification to the Statement of Work encompassing such additional services; (b) services involving contingency payments prohibited by any applicable law or regulation or by the Company’s contract; or (c) services rendered that result in billings to the Company that are in excess of [DOLLAR AMOUNT] which is the total ceiling value or not-to-exceed (NTE) value for this Agreement.
@@ -60,20 +60,20 @@ Company shall make payment within thirty (30) days after receipt of a proper inv
 Payments made to Consultant shall not constitute or be construed as acceptance of any of the Services performed by Consultant under this Agreement.
 
 INDEPENDENT CONTRACTOR
-----------------------
+======================
 
 
 Consultant and Company shall at all times be deemed to be independent contractors and nothing herein shall be construed to create or imply that there exists between the parties a partnership, joint venture or other combined business organization.  Consultant shall hold no authority, express or implied, to commit, obligate or make representations on behalf of Company and shall make no representation to others to the contrary.  Nothing herein is intended nor shall be construed for any purpose as creating the relation of employer and employee or agent and principal between the parties.  Except as otherwise specified herein, Consultant retains the right to direct, control or supervise the details and means by which the consulting Services are provided.  Consultant’s employees shall not be eligible for, or participate in, any insurance, pension, workers’ compensation insurance, profit sharing or other plans established for the benefit of Company employees.
 Consultant shall be responsible for payment of all foreign and domestic taxes arising out of the Consultant’s activities in connection with this Agreement, including without limitation, sales, goods and services, excise, value added or similar taxes, whether of federal or other jurisdictional level, social security taxes, unemployment insurance taxes, and any other taxes or business license fees as required.  Company shall not be responsible for withholding any income or employment taxes whatsoever on behalf of Consultant, and Consultant further agrees to indemnify, defend and hold Company harmless from and against any claims or action arising out of or relating to Consultant’s failure to withhold such taxes on behalf of Consultant or Consultant’s employees.
 
 AUDIT
------
+=====
 
 
 Consultant shall retain all books, records, documents and other evidence pertaining to its Services rendered and billings made under this Agreement (“the Records”).  The Records shall be subject to inspection and audit by Company and the Government (if necessary) at all reasonable times and upon reasonable notice for a period of three (3) years after final payment under this Agreement.  If any audit of Consultant’s invoiced charges demonstrates that Consultant’s invoiced charges exceed the correct charges, Consultant shall immediately pay or refund such excess charges to Company’ account, and if such excess charges exceed the correct charges by more than five percent (5%), Consultant shall also pay or reimburse Company for all reasonable costs of such audit, to include any reasonable costs (including attorneys fees and costs) incurred by Company in collecting such excess charges from Consultant.
 
 CONFIDENTIALITY
----------------
+===============
 
 
 Each party shall receive in confidence (“receiving party”) from the other party (“disclosing party”) and treat as confidential all technical information, business/financial information, management information, and documentation which (i) is stamped or otherwise marked as being confidential or proprietary, whether in written or electronic form, (ii) pertains in any way to such party’s (or its affiliates’) business plans or methods, or (iii) otherwise is not generally known by others, and under the circumstances of the disclosure, the disclosing party had a reasonable expectation that the receiving party would know that the information is confidential or proprietary (collectively, “Proprietary Information”).  Information that is disclosed orally or visually to a receiving party shall also be deemed Proprietary Information if the disclosing party identifies such information as proprietary at the time of disclosure and, within thirty (30) days after such disclosure reduces the subject matter of the disclosure to writing and submits it to the receiving party.
@@ -82,7 +82,7 @@ The restrictions of this Section shall not apply to any information:  (i) lawful
 Proprietary Information shall remain the property of the disclosing party and shall be returned or destroyed upon written request or upon termination or expiration of this Agreement.  Receiving party may retain in the files of its legal counsel for archival purposes only, one copy of all written materials returned.
 
 INTELLECTUAL PROPERTY RIGHTS
-----------------------------
+============================
 
 ### Inventions
 
@@ -109,7 +109,7 @@ INTELLECTUAL PROPERTY RIGHTS
 
 
 REPRESENTATIONS & WARRANTIES
-----------------------------
+============================
 
 
 Consultant represents and warrants that Consultant and each officer or employee thereof who renders Services hereunder:
@@ -128,7 +128,7 @@ Consultant represents and warrants that Consultant and each officer or employee 
 
 
 INSURANCE
----------
+=========
 
 
 Consultant agrees to procure and maintain during the term of this Agreement, at Consultant’s own cost and expense, professional indemnity and public liability insurance, with the following minimum liability limits:
@@ -140,7 +140,7 @@ Consultant agrees to procure and maintain during the term of this Agreement, at 
 Consultant agrees to provide appropriate certificates or other evidence of such insurance coverage as may be requested by Company.  Consultant agrees that the procurement and maintenance of the above insurance coverage shall not limit or affect any liability that Consultant may incur under this Agreement or otherwise.
 
 SAFETY
-------
+======
 
 
 Consultant agrees to comply with all federal, provincial and territorial occupational health and safety laws, regulations and standards, and all Company’s safety rules of which Consultant has notice, regarding the performance of Services under this Agreement. Consultant agrees to communicate Company’s safety rules to Consultant’s contractors and employees.  Consultant responsible for maintaining a safe workplace by following commercially accepted safety and health rules and practices.  Consultant is responsible for immediately reporting accidents, injuries, and unsafe equipment, practices or conditions related to Consultant’s performance of work for Company to the Authorized Representative of Company identified herein.  Company is committed to keeping its workplaces free from hazards.
@@ -148,19 +148,19 @@ Consultant authorizes Company to provide minor first aid to those individuals pe
 Consultant shall defend, indemnify and hold Company and its officers, directors and employees harmless from and against all expenses, costs, damages, liabilities and losses incurred by Company in connection with any claim, investigation, demand, action, suit or proceeding arising out of or resulting from the provision of any medical care or treatment to those individuals performing Services on behalf of Consultant hereunder or the calling of ambulance services for such employees by Company.
 
 PUBLICITY
----------
+=========
 
 
 Except as required by law, Consultant shall not issue any press release or make any other public statement relating to this Agreement, any Services performed under this Agreement, or any of the transactions contemplated by this Agreement, without obtaining the prior written approval of Company as to the contents and the manner of presentation and publication of such press release or public statement.
 
 ACCEPTANCE
-----------
+==========
 
 
 If Company is not reasonably satisfied with any Service, it will so notify Consultant with an explanation of the deficiency.  Consultant will, at its own expense, re-perform the Service within twenty-one (21) days after receipt of Company’s notice of deficiency.  The foregoing procedure will be repeated until Company accepts or finally rejects the Service in its reasonable discretion.
 
 TERMINATION
------------
+===========
 
 
 This Agreement may be terminated by either party in the event the other party fails to perform its obligations hereunder on time, fails to assure timely performance, or otherwise fails to perform its material obligations; provided, however, that prior to such termination the terminating party notifies the defaulting party in writing at least fifteen (15) days in advance, states the reasons why the Agreement should be terminated and affords the defaulting party an opportunity to cure any alleged default during such fifteen (15) day notice period.
@@ -181,7 +181,7 @@ Upon termination of this Agreement, Consultant shall return to Company all copie
 Upon payment of the agreed to termination settlement amount, Company shall thereafter have no liability or obligation to Consultant for any further compensation, fees, expenses or other payments related to this Agreement.
 
 LIABILITY AND INDEMNIFICATION
------------------------------
+=============================
 
 
 Neither Company, nor its officers, directors, employees, affiliates, or parent companies shall be liable for any injury to the person or property of Consultant or its employees or contractors, except to the extent that such injury was directly caused by the fault or negligence of Company or its employees acting within the scope of their employment.
@@ -197,7 +197,7 @@ In addition to any other indemnification obligation herein, Consultant shall ind
 IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE OR CONSEQUENTIAL DAMAGES INCURRED BY THE OTHER PARTY OR ANY THIRD PARTY, WHETHER IN CONTRACT, TORT, OR BASED UPON A WARRANTY, EVEN IF THE OTHER PARTY OR ANY THIRD PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  COMPANY’S MAXIMUM LIABILITY UNDER THIS AGREEMENT SHALL BE THE SUM OF THE STATEMENT OF WORK AND / OR PURCHASE ORDER TOTAL VALUES, LESS ANY PAYMENT MADE TO CONSULTANT HEREUNDER.
 
 MISCELLANEOUS
--------------
+=============
 
 1. Severability — If any provision of this Agreement shall be held to be invalid or unenforceable, such provision shall be stricken and the remainder of the Agreement shall remain in full force and effect to accomplish the intent and purpose of the parties.  The parties agree to negotiate the severed provision to bring the same within the applicable legal requirements to the extent possible.
 
