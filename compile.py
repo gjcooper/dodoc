@@ -19,6 +19,8 @@ template_warning = 'Alternative templates found on search path - Trying first:\n
 type_warning = 'Alternative doctypes found on search path - Trying first:\n\t{}'
 pagelabel_warning = 'Message: [Rerun to get /PageLabels entry] found in output, rerunning'
 tablewidth_warning = 'Message: [Table widths have changed] found in output, rerunning'
+waitinginput_error = '\n{}\n{}'.format('=' * 40, 'Was waiting for input, fix and retry')
+waitinginput_suggestion = 'Likely to be waiting for a filename, check your templates, and if necessary link to a source directory with -f'
 
 def verifyFilePath(possibleFilePath):
     p = Path(possibleFilePath)
@@ -220,15 +222,15 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
         except subprocess.TimeoutExpired:
             proc.kill()
             output, error = proc.communicate()
-            logger.error('\n{}\n{}'.format('=' * 40, 'Was waiting for input, fix and retry'))
-            logger.error('Likely to be waiting for a filename, check your templates, and if necessary link to a source directory with -d')
             logger.error(output)
+            logger.error(waitinginput_error)
+            logger.error(waitinginput_suggestion)
             break
         if 'Rerun to get /PageLabels entry' in outs:
             logger.warn(pagelabel_warning)
             continue
         if 'Table widths have changed' in outs:
-            logger.warn(tablewidths_warning)
+            logger.warn(tablewidth_warning)
             continue
         shutil.copy('{}'.format(output_file), str(Path(currwd).joinpath(final_file.name)))
         os.chdir(currwd)
