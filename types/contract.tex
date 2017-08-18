@@ -5,7 +5,6 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{graphicx}
-\usepackage[pages=some,scale=1,angle=0,opacity=0.7]{background}
 \usepackage{tikz}
 
 % Adds microtypography features: character protrusion, for XeTeX.
@@ -35,13 +34,6 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \newcommand\shyp{\-}
-
-\newcommand\BackImage[2][scale=1]{%
-\BgThispage
-\backgroundsetup{
-  contents={\includegraphics[#1]{#2}}
-  }
-}
 
 \newcommand{\coverpage}[0]{
 	$if(cover.include)$

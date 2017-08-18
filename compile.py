@@ -177,7 +177,8 @@ def modenv(folderlist):
     env = os.environ.copy()
 
     prevTEX = env['TEXINPUTS'].split(os.pathsep) if 'TEXINPUTS' in env else []
-    newTEX = os.pathsep.join(folderlist + prevTEX)
+    recursive_folders = [f + '//' for f in folderlist]
+    newTEX = os.pathsep.join(recursive_folders + prevTEX)
     env['TEXINPUTS'] = newTEX + ':'
     return env
 
