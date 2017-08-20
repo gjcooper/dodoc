@@ -1,13 +1,19 @@
 ---
 size: 11pt
 draft: 
+sigform:
+ include: yes
+ file: sigbox
+ consultant: {consultant}
+ client: {client}
 sig:
- include: 
+ include:
  sign:
  post: Data Analyst
 hdr:
  include: yes
  file: hdr
+footer: version number 34912nudy2e7816gf
 cover:
  include: yes
  company: Test Company
@@ -19,10 +25,10 @@ cc:
 Consulting Contract Template
 
 
-Prepared for {owner}
+Prepared for {client}
 by {consultant}
 
-This Consulting Contract (this “Agreement” or this “Consulting Contract”), effective as of {date}, (“Effective Date”) is made by and between {owner}, with offices located at {company street address}, {company city state postcode}  (“Company”) and {consultant}, a business with offices located at {street address}, {city state postcode} (“Consultant”).
+This Consulting Contract (this “Agreement” or this “Consulting Contract”), effective as of {date}, (“Effective Date”) is made by and between {client}, with offices located at {company street address}, {company city state postcode}  (“Company”) and {consultant}, a business with offices located at {street address}, {city state postcode} (“Consultant”).
 
 WHEREAS, Company wishes to retain Consultant to {work description} as more specifically set forth in Attachment 1; and
 
@@ -41,13 +47,13 @@ TERM
 ====
 
 
-The term of this Agreement shall commence on the Effective Date and continue until [DATE], unless otherwise modified by mutual, written agreement of the parties or terminated as set forth herein.
+The term of this Agreement shall commence on the Effective Date and continue until {end date}, unless otherwise modified by mutual, written agreement of the parties or terminated as set forth herein.
 
 COMPENSATION & PAYMENT
 ======================
 
 
-As consideration for the Services, and upon the submission of monthly invoices, within the payment terms stipulated herein, the Company shall pay Consultant at the rates or in accordance with the milestone payment schedule set forth on purchase order(s) issued by Company or in the Statement of Work, for such Services as are actually rendered by Consultant and accepted by the Company.  In no event, however, shall Consultant perform, or receive compensation for: (a) additional services not set forth in the Statement of Work without a formal, bilateral modification to the Statement of Work encompassing such additional services; (b) services involving contingency payments prohibited by any applicable law or regulation or by the Company’s contract; or (c) services rendered that result in billings to the Company that are in excess of [DOLLAR AMOUNT] which is the total ceiling value or not-to-exceed (NTE) value for this Agreement.
+As consideration for the Services, and upon the submission of monthly invoices, within the payment terms stipulated herein, the Company shall pay Consultant at the rates or in accordance with the milestone payment schedule set forth on purchase order(s) issued by Company or in the Statement of Work, for such Services as are actually rendered by Consultant and accepted by the Company.  In no event, however, shall Consultant perform, or receive compensation for: (a) additional services not set forth in the Statement of Work without a formal, bilateral modification to the Statement of Work encompassing such additional services; (b) services involving contingency payments prohibited by any applicable law or regulation or by the Company’s contract; or (c) services rendered that result in billings to the Company that are in excess of {total amount} which is the total ceiling value or not-to-exceed (NTE) value for this Agreement.
 If expressly provided for in the Statement of Work and expressly not included in the firm-fixed-price that may be established in the Statement of Work, Company shall reimburse Consultant for reasonable and necessary out-of-pocket travel and other miscellaneous expenses relating to this Agreement, which are incurred at the direction of, and upon the prior written approval of, the Company.  Such reasonable travel expenses include air/rail travel, taxis, auto rentals, meals, and lodging, provided that such reimbursement will not be in excess of that allowed by the paragraph above, and provided that no reimbursement shall be made for Consultant’s commuting to facilities within a fifty-kilometer radius of Consultant’s home or place of business.
 Travel must be authorized by Company prior to any anticipated reimbursable travel.  Reimbursement for reasonable and actual expenses shall be made in accordance with the following rates:
 a. Air travel – Lowest unrestricted coach fare
@@ -189,7 +195,6 @@ LIABILITY AND INDEMNIFICATION
 Neither Company, nor its officers, directors, employees, affiliates, or parent companies shall be liable for any injury to the person or property of Consultant or its employees or contractors, except to the extent that such injury was directly caused by the fault or negligence of Company or its employees acting within the scope of their employment.
 In addition to any other indemnification obligation herein, Consultant shall indemnify, defend and hold Company and its officers, directors, and employees, harmless from and against all expenses, costs, damages, liabilities and losses (including, without limitation, reasonable attorneys fees) incurred by Company in connection with any claim, investigation, demand, action, suit or proceeding (whether civil, criminal, administrative or investigative) arising out of or resulting from Consultant’s performance of the Services, including but not limited to, the following:
 
-1. 
 1. Consultant’s failure to deduct and pay taxes required by law on compensation Consultant is obligated to pay to its officers, employees or independent contractors; and
 
 2. Personal injury or death, as well as loss or damage to property, caused directly or indirectly by the acts, omissions or negligence of Consultant or any of Consultant’s agents, employees, officers or independent contractors engaged in the performance of the Services under this Agreement.
@@ -224,18 +229,3 @@ MISCELLANEOUS
 
 
 This Agreement is duly executed by the duly authorized representatives of the parties as set forth below:
-[CONSULTANT NAME]
-
-
-
-[CLIENT COMPANY]
-
-
-
-
-___________________________                                              __________________________
-Owner Name                                                                               Contractor Name
-
-
-___________________________                                              __________________________
-Owner Signature                                                                         Contractor Signature

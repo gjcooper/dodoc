@@ -6,6 +6,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{fancyhdr}%
 
 % Adds microtypography features: character protrusion, for XeTeX.
 \usepackage{microtype}
@@ -21,18 +22,28 @@
 \urlstyle{rm}
 
 \frenchspacing{}        % Remove extra spaces after periods.
-\pagestyle{empty}       % Remove page numbers.
+
+$if(footer)$
+\fancyhf{}% Clear all headers/footers
+\fancyfoot[C]{$footer$}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+$endif$
+\thispagestyle{empty}
 
 \usepackage{fontspec}
-\defaultfontfeatures{Mapping=tex-text}  % Sets quotation marks.
-\setromanfont{Linux Libertine O}
-\setsansfont[BoldFont={DejaVu Sans Bold}]{DejaVu Sans}
-\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{UnJamoDotum}
+\setmonofont{Noto Mono}
 
 % From default template
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+$if(sigform.include)$
+    \def\sigformconsult{$sigform.consultant$}%
+    \def\sigformclient{$sigform.client$}%
+$endif$
 \newcommand\shyp{\-}
 
 \newcommand{\coverpage}[0]{
@@ -72,6 +83,10 @@ $if(sig.include)$
     Gavin Cooper\\
     $sig.post$
     \end{minipage}
+$endif$
+
+$if(sigform.include)$
+	\input{$sigform.file$}
 $endif$
 
 $if(cc)$

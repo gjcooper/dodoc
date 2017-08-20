@@ -22,6 +22,8 @@ tablewidth_warning = 'Message: [Table widths have changed] found in output, reru
 waitinginput_error = '\n{}\n{}'.format('=' * 40, 'Was waiting for input, fix and retry')
 waitinginput_suggestion = 'Likely to be waiting for a filename, check your templates, and if necessary link to a source directory with -f'
 
+extra_files = ['types/digsig.sty']
+
 def verifyFilePath(possibleFilePath):
     p = Path(possibleFilePath)
     if p.is_file():
@@ -163,11 +165,12 @@ def replace(document, patternfile, generate=False):
     if len(unmatched) > 0:
         if generate:
             logger.info('Generating new values for configuration:')
-            for m in unmatched:
+            for m in set(unmatched):
                 print('What value should be used for ' + str(m))
                 value = input('\t- ')
                 config.set('manual', str(m), value)
-            config.write(patternfile)
+            with open(str(patternfile), 'w') as configfile:
+                config.write(configfile)
             replace(document, patternfile, generate=generate)
             return
         msgs = '\n'.join('\tUnmatched replacement - ' + str(m) for m in unmatched)
@@ -216,7 +219,7 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
                                 universal_newlines=True, env=my_env)
         outs = ''
         try:
-            outs, errs = proc.communicate(timeout=5)
+            outs, errs = proc.communicate(timeout=8)
             if proc.returncode is None:
                 continue
         except subprocess.TimeoutExpired:
@@ -248,6 +251,9 @@ def compile(template=None, document=None, folders=[], **kwargs):
         my_env = modenv(['.', str(template.parent), str(document.parent)] + folders)
         template = Path(shutil.copy(str(template), temp_dir))
         document = Path(shutil.copy(str(document), temp_dir))
+        for efile in extra_files:
+            print(os.getcwd())
+            shutil.copy(efile, temp_dir)
         if kwargs['replace']:
             replace(document, kwargs['replace'], generate=kwargs['generate'])
         _generate(temp_dir, my_env, template, document)
