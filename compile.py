@@ -150,7 +150,7 @@ def replace(document, patternfile, generate=False):
         contents = doc.read()
     config = configparser.ConfigParser()
     config.read(str(patternfile))
-    replacements = _get_section_or_create(config, 'manual')
+    replacements = dict(_get_section_or_create(config, 'manual'))
     autos = dict(_get_section_or_create(config, 'auto'))
     auto_replacements(autos)
     replacements.update(autos)
