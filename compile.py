@@ -151,8 +151,9 @@ def replace(document, patternfile, generate=False):
     config = configparser.ConfigParser()
     config.read(str(patternfile))
     replacements = _get_section_or_create(config, 'manual')
-    auto_replacements(_get_section_or_create(config, 'auto'))
-    replacements.update(config['auto'])
+    autos = dict(_get_section_or_create(config, 'auto'))
+    auto_replacements(autos)
+    replacements.update(autos)
     # Translate to template key format (re.escaped versions!)
     replacements = {re.escape('{{{}}}'.format(k)): v for k, v in replacements.items()}
     pattern = re.compile('|'.join(replacements.keys()))

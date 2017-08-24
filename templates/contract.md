@@ -1,5 +1,5 @@
 ---
-size: 11pt
+fontsize: 11pt
 draft: 
 sigform:
  include: yes
