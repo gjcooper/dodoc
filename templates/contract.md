@@ -11,9 +11,9 @@ sig:
  sign:
  post: Data Analyst
 hdr:
- include: yes
+ include:
  file: hdr
-footer: version number 34912nudy2e7816gf
+footer: version number xxxxxxxxxxxxxxxxx
 cover:
  include: yes
  company: Test Company
@@ -53,14 +53,16 @@ COMPENSATION & PAYMENT
 ======================
 
 
-As consideration for the Services, and upon the submission of monthly invoices, within the payment terms stipulated herein, the Company shall pay Consultant at the rates or in accordance with the milestone payment schedule set forth on purchase order(s) issued by Company or in the Statement of Work, for such Services as are actually rendered by Consultant and accepted by the Company.  In no event, however, shall Consultant perform, or receive compensation for: (a) additional services not set forth in the Statement of Work without a formal, bilateral modification to the Statement of Work encompassing such additional services; (b) services involving contingency payments prohibited by any applicable law or regulation or by the Company’s contract; or (c) services rendered that result in billings to the Company that are in excess of {total amount} which is the total ceiling value or not-to-exceed (NTE) value for this Agreement.
+As consideration for the Services, and upon the submission of monthly invoices, within the payment terms stipulated herein, the Company shall pay Consultant at the rates or in accordance with the milestone payment schedule set forth on purchase order(s) issued by Company or in the Statement of Work, for such Services as are actually rendered by Consultant and accepted by the Company.  In no event, however, shall Consultant perform, or receive compensation for: (a) additional services not set forth in the Statement of Work without a formal, bilateral modification to the Statement of Work encompassing such additional services; (b) services involving contingency payments prohibited by any applicable law or regulation or by the Company’s contract; or (c) services rendered that result in billings to the Company that are in excess of {nte value} which is the total ceiling value or not-to-exceed (NTE) value for this Agreement.
 If expressly provided for in the Statement of Work and expressly not included in the firm-fixed-price that may be established in the Statement of Work, Company shall reimburse Consultant for reasonable and necessary out-of-pocket travel and other miscellaneous expenses relating to this Agreement, which are incurred at the direction of, and upon the prior written approval of, the Company.  Such reasonable travel expenses include air/rail travel, taxis, auto rentals, meals, and lodging, provided that such reimbursement will not be in excess of that allowed by the paragraph above, and provided that no reimbursement shall be made for Consultant’s commuting to facilities within a fifty-kilometer radius of Consultant’s home or place of business.
 Travel must be authorized by Company prior to any anticipated reimbursable travel.  Reimbursement for reasonable and actual expenses shall be made in accordance with the following rates:
+
 a. Air travel – Lowest unrestricted coach fare
 b. Rented Automobile – Compact Type, unless not practical
-c. Meals, Incidentals, Lodging (Accommodations) & Private Vehicle Usage – Actual and reasonable costs supported by original receipts, or the rates and allowances specified in Appendices B, C and D of the Treasury Board of Canada Travel Directive Effective April 1, 2008 (revised January 15, 2009), whichever is less.
+c. Meals, Incidentals, Lodging (Accommodations) & Private Vehicle Usage – Actual and reasonable costs supported by original receipts.
 d. Miscellaneous Expense – Actual and reasonable pre-approved costs that are directly and reasonably required for performance of the Services.
 e. Alcohol and most entertainment costs are NOT allowable expenses, will not be reimbursed by Company, and shall not be included in any manner in any invoice submitted hereunder.
+
 All invoices shall include a breakout and description of the Services rendered, along with the actual hours and expenses incurred (for T&M type services) and milestone descriptions (for FFP type services), receipts (if required), and shall be submitted in a format prescribed by the Company indicating the applicable purchase order number issued by the Company or Statement of Work for which the invoice relates.
 Company shall make payment within thirty (30) days after receipt of a proper invoice that complies with the requirements of this Agreement.  Company may withhold any amounts in an invoice that are in dispute, are contrary to the requirements of this Section 3, or are not substantiated by proper receipts.
 Payments made to Consultant shall not constitute or be construed as acceptance of any of the Services performed by Consultant under this Agreement.
@@ -93,15 +95,11 @@ INTELLECTUAL PROPERTY RIGHTS
 Inventions
 ----------
 
-1. Consultant shall promptly disclose to Company all inventions, software, development, improvements, and contrivances (hereinafter “Inventions”) in Consultant’s field of endeavor in the line of Company’ present or future business which are made or conceived or actually or constructively reduced to practice by Consultant or with Consultant’s assistance or under Consultant’s direction in the course of performance during the term and any extension of the term of this Agreement, whether or not patentable and whether made by any of Consultant’s employees solely or jointly with others, which relate to or are suggested by or result from any Services which the Consultant may perform pursuant to this Agreement or from any information obtained by the Consultant in any discussions or meetings with employees of Company.
+1. Consultant shall promptly disclose to Company all inventions, software, development, improvements, and contrivances (hereinafter “Inventions”) in Consultant’s field of endeavor in the line of Company’ present or future business which are made or conceived or actually or constructively reduced to practice by Consultant or with Consultant’s assistance or under Consultant’s direction in the course of performance during the term and any extension of the term of this Agreement, whether or not patentable and whether made by any of Consultant’s employees solely or jointly with others, which relate to or are suggested by or result from any Services which the Consultant may perform pursuant to this Agreement or from any information obtained by the Consultant in any discussions or meetings with employees of Company, with the exception of exemptions listed in 7.3
 
 2. Consultant shall assign and does hereby assign all Consultant’s rights, title and interest in and to said Inventions to Company, and shall assist Company in every way to protect, at Company’ expense, said Inventions, including but not limited to, the signing of patent applications, oaths and assignments in favor of Company relating to the said Inventions, respecting such applications in the United States and in any and all foreign countries and shall assist in any interference proceedings or litigation involving any patents that may be obtained for such Inventions.
 
 3. Consultants shall make no applications for patents on any such Inventions except for Company’ benefit as herein provided.
-
-
-
-
 
 Cooperation
 -----------
@@ -112,8 +110,12 @@ Cooperation
 
 3. Data — All notes, drawings, designs and technical data developed in connection with or pursuant to the terms of this Agreement shall become and/or remain the exclusive property of Company, and Company shall have the exclusive right to use and disclose them for any purpose.  Upon completion of the Services or earlier termination of this Agreement, Consultant agrees to promptly deliver to Company all materials, including all copies thereof, that are in Consultant’s possession or under his/her control that were developed in connection with this Agreement.
 
+Exemptions
+----------
 
+1. Software of generic nature (hereinafter "Tools of Trade"), which include software libraries and tools that are used to facilate the creation of the product or completion of the service for the Company remain the intellectual property of the Consultant.
 
+2. The Consultant grants a non-exclusive license in relation to any of the Consultant's Tools of Trade or other pre-existing intellectual property included in what is delivered to you, that requires no further payment, is irrevocable, and is able to be sub-licensed.
 
 
 REPRESENTATIONS & WARRANTIES
