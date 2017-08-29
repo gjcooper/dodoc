@@ -6,28 +6,16 @@ sigform:
  file: sigbox
  consultant: {consultant}
  client: {client}
-sig:
- include:
- sign:
- post: Data Analyst
-hdr:
- include:
- file: hdr
 footer: version number xxxxxxxxxxxxxxxxx
 cover:
  include: yes
  client: Test Client
  consult: Test Consult
+ title: Consulting Contract
  file: coverpage
 cc:
 ---
 
-
-Consulting Contract Template
-
-
-Prepared for {client}
-by {consultant}
 
 This Consulting Contract (this “Agreement” or this “Consulting Contract”), effective as of {date}, (“Effective Date”) is made by and between {client}, with offices located at {company street address}, {company city state postcode}  (“Client”) and {consultant}, a business with offices located at {street address}, {city state postcode} (“Consultant”).
 
