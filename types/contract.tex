@@ -44,12 +44,14 @@ $if(sigform.include)$
     \def\sigformconsult{$sigform.consultant$}%
     \def\sigformclient{$sigform.client$}%
 $endif$
+$if(cover.include)$
+	\def\coverclient{$cover.client$}%
+	\def\coverconsult{$cover.consult$}%
+$endif$
 \newcommand\shyp{\-}
 
 \newcommand{\coverpage}[0]{
 	$if(cover.include)$
-		\def\coverclient{$cover.client$}%
-		\def\coverconsult{$cover.consult$}%
 		\input{$cover.file$}
 	$endif$
 }
