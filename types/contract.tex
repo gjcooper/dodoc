@@ -48,6 +48,8 @@ $endif$
 
 \newcommand{\coverpage}[0]{
 	$if(cover.include)$
+		\def\coverclient{$cover.client$}%
+		\def\coverconsult{$cover.consult$}%
 		\input{$cover.file$}
 	$endif$
 }

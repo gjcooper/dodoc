@@ -16,7 +16,8 @@ hdr:
 footer: version number xxxxxxxxxxxxxxxxx
 cover:
  include: yes
- company: Test Client
+ client: Test Client
+ consult: Test Consult
  file: coverpage
 cc:
 ---

@@ -22,7 +22,8 @@ tablewidth_warning = 'Message: [Table widths have changed] found in output, reru
 waitinginput_error = '\n{}\n{}'.format('=' * 40, 'Was waiting for input, fix and retry')
 waitinginput_suggestion = 'Likely to be waiting for a filename, check your templates, and if necessary link to a source directory with -f'
 
-extra_files = ['types/digsig.sty']
+base_dir = os.path.dirname(os.path.realpath(__file__))
+extra_files = [os.path.join(base_dir, path) for path in ['types/digsig.sty']]
 
 def verifyFilePath(possibleFilePath):
     p = Path(possibleFilePath)
