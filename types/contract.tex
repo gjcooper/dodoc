@@ -33,7 +33,9 @@ $if(footer)$
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}
 $endif$
-\thispagestyle{empty}
+$if(cover.include)$
+	\thispagestyle{empty}
+$endif$
 
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
