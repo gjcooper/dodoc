@@ -2,6 +2,10 @@
 
 \documentclass[a4paper]{article}
 \usepackage[a4paper,margin=1in]{geometry}
+$if(nonumbers)$
+\renewcommand\thesection{}
+\renewcommand\thesubsection{}
+$endif$
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{graphicx}
