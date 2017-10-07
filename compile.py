@@ -25,6 +25,7 @@ waitinginput_suggestion = 'Likely to be waiting for a filename, check your templ
 base_dir = os.path.dirname(os.path.realpath(__file__))
 extra_files = [os.path.join(base_dir, path) for path in ['types/digsig.sty']]
 
+
 def verifyFilePath(possibleFilePath):
     p = Path(possibleFilePath)
     if p.is_file():
@@ -205,7 +206,7 @@ def mod_file(sourcefile, ext, unique=True, generate_non_unique=True, cntr=1):
     return destfile
 
 
-def _generate(temp_dir, my_env, template, document, attempts=5):
+def _generate(temp_dir, my_env, template, document, attempts=5, partial=False, **kwargs):
     dest_file = mod_file(document, '.tex')
     output_file = mod_file(dest_file, '.pdf')
     final_file = mod_file(document, '.pdf')
@@ -214,6 +215,10 @@ def _generate(temp_dir, my_env, template, document, attempts=5):
     subprocess.check_call(['pandoc', '-f', 'markdown', '-t', 'latex',
                            '--template={}'.format(template),
                            '{}'.format(document), '-o', '{}'.format(dest_file)])
+    if partial:
+        shutil.copy('{}'.format(dest_file), str(Path(currwd).joinpath(dest_file.name)))
+        os.chdir(currwd)
+        print('Latex returned')
 
     for attempt in range(1, attempts + 1):
         logger.info('Attempt number {}'.format(attempt))
@@ -258,7 +263,7 @@ def compile(template=None, document=None, folders=[], **kwargs):
             shutil.copy(efile, temp_dir)
         if kwargs['replace']:
             replace(document, kwargs['replace'], generate=kwargs['generate'])
-        _generate(temp_dir, my_env, template, document)
+        _generate(temp_dir, my_env, template, document, **kwargs)
 
 
 def _list_type(output, searchresults):
@@ -287,6 +292,7 @@ def main():
     parser.add_argument('-r', '--replace', type=validFilePath, help='A set of replacement patterns to apply to the document')
     parser.add_argument('-g', '--generate', action='store_true', help='Generate a replacement pattern config file for any unmatched patterns')
     parser.add_argument('-f', '--folders', help='A folder containing referenced files', action='append', default=[])
+    parser.add_argument('-p', '--partial', action='store_true', help='Return the generated intermediate latex file for manual editing')
     parser.add_argument('--list', help='List all possible templates and doctypes we can find', action='store_true')
     args = parser.parse_args()
     if args.list:
