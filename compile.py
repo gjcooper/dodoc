@@ -217,7 +217,6 @@ def _generate(temp_dir, my_env, template, document, attempts=5, partial=False, *
                            '{}'.format(document), '-o', '{}'.format(dest_file)])
     if partial:
         shutil.copy('{}'.format(dest_file), str(Path(currwd).joinpath(dest_file.name)))
-        os.chdir(currwd)
         print('Latex returned')
 
     for attempt in range(1, attempts + 1):
